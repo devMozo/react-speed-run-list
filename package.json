@@ -1,0 +1,27 @@
+{
+  "name": "react-speed-run-list",
+  "version": "1.0.0",
+  "description": "A speedrun is a play-through (or a recording thereof, namely run) of a video game performed with the intention of completing it as fast as possible within one's own ability.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devMozo/react-speed-run-list.git"
+  },
+  "author": "Nicolas Mozo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devMozo/react-speed-run-list/issues"
+  },
+  "homepage": "https://github.com/devMozo/react-speed-run-list#readme"
+}
