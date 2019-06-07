@@ -1,3 +1,1 @@
-export default () => {
-  return <div>Welcome to Next.js!</div>;
-}
+export default () => <div>Welcome to Next.js!</div>;

@@ -1,7 +1,8 @@
-import Title from "../../app/components/SectionTitle/SectionTitle"
+import Title from '../../app/components/SectionTitle/SectionTitle';
 
-export default () => {
-    return <div>Welcome to Next.js!
+export default () => (
+    <div>
+      Welcome to Next.js!
       <Title />
-    </div>;
-  }
+    </div>
+  );
