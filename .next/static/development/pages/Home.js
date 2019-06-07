@@ -1,5 +1,40 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/Home.js"],{
 
+/***/ "./app/components/SectionTitle/SectionTitle.js":
+/*!*****************************************************!*\
+  !*** ./app/components/SectionTitle/SectionTitle.js ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _SectionTitle_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SectionTitle.scss */ "./app/components/SectionTitle/SectionTitle.scss");
+/* harmony import */ var _SectionTitle_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_SectionTitle_scss__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/home/gaara/Repos/Tests/react-speed-run-list/app/components/SectionTitle/SectionTitle.js";
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "SectionTitle",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }, " Loren ipsum dolor sit amet concectetur adipiscing velit. "));
+});
+
+/***/ }),
+
 /***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FHome&absolutePagePath=%2Fhome%2Fgaara%2FRepos%2FTests%2Freact-speed-run-list%2Fpages%2FHome%2Findex.js!./":
 /*!*************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FHome&absolutePagePath=%2Fhome%2Fgaara%2FRepos%2FTests%2Freact-speed-run-list%2Fpages%2FHome%2Findex.js ***!
@@ -45,16 +80,24 @@ module.exports = (__webpack_require__(/*! dll-reference dll_6dc2816e14fab51b8269
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _app_components_SectionTitle_SectionTitle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../app/components/SectionTitle/SectionTitle */ "./app/components/SectionTitle/SectionTitle.js");
 var _jsxFileName = "/home/gaara/Repos/Tests/react-speed-run-list/pages/Home/index.js";
+
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 2
+      lineNumber: 4
     },
     __self: this
-  }, "Welcome to Next.js!");
+  }, "Welcome to Next.js!", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_SectionTitle_SectionTitle__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }));
 });
 
 /***/ }),
@@ -82,5 +125,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=Home.js.map
