@@ -1,5 +1,12 @@
 .SectionTitle {
-    p { 
-        color: red;
-    }
+  width: 100%;
+  text-align: center;
+
+  &:after {
+    content: '';
+    width: 150px;
+    height: 5px;
+    background-color: black;
+    display: inline-block;
+  }
 }

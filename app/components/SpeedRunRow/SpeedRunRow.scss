@@ -1,0 +1,54 @@
+.SpeedRunRow {
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+  box-sizing: border-box;
+
+  & > * {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .SpeedRunRow__description {
+    padding: 0px 20px;
+    box-sizing: border-box;
+    & > * {
+      width: 250px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin: 0;
+      font-size: 14px;
+    }
+
+    h4 {
+      color: #888;
+    }
+  }
+
+  .SpeedRunRow__logo {
+    width: 100px;
+    height: inherit;
+
+    img {
+      object-fit: cover;
+      overflow: hidden;
+      width: inherit;
+      height: inherit;
+    }
+  }
+
+  .SpeedRunRow__link {
+    float: right;
+    border: 0;
+    background-color: #333;
+    color: white;
+    margin: 20px 30px 0 0px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}

@@ -1,7 +1,14 @@
 import './SectionTitle.scss';
+import PropTypes from 'prop-types';
 
-export default () => (
+const SectionTitle = ({ title }) => (
   <div className="SectionTitle">
-    <p> Loren ipsum dolor sit amet concectetur adipiscing velit. </p>
+    <h2>{title}</h2>
   </div>
 );
+
+SectionTitle.propTypes = {
+  title: PropTypes.string,
+};
+
+export default SectionTitle;
