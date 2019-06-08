@@ -1,7 +1,10 @@
+@import '../../fonts/index.scss';
+
 .SpeedRunRow {
   overflow: hidden;
   border-bottom: 1px solid #eee;
   box-sizing: border-box;
+  font-family: $fontRegular;
 
   & > * {
     display: inline-block;
@@ -17,11 +20,16 @@
       overflow: hidden;
       text-overflow: ellipsis;
       margin: 0;
-      font-size: 14px;
+    }
+
+    h2 {
+      color: #333;
+      font-size: 18px;
     }
 
     h4 {
       color: #888;
+      font-size: 14px;
     }
   }
 

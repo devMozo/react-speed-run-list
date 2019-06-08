@@ -11,6 +11,7 @@ const SpeedRunRow = ({ style, data }) => (
       <h2>{data.names.international}</h2>
       <h4>
         Released:
+        {'  '}
         {data.released}
       </h4>
     </section>

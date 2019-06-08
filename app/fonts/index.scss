@@ -1,0 +1,57 @@
+@mixin font-face($family, $filename) {
+  @font-face {
+    font-family: $family;
+    font-display: auto;
+    src: url('#{$filename}.ttf') format('truetype');
+  }
+}
+
+@include font-face('Montserrat-Black', '/static/Montserrat-Black');
+@include font-face('Montserrat-BlackItalic', '/static/Montserrat-BlackItalic');
+@include font-face('Montserrat-Bold', '/static/Montserrat-Bold');
+@include font-face('Montserrat-BoldItalic', '/static/Montserrat-BoldItalic');
+@include font-face('Montserrat-ExtraBold', '/static/Montserrat-ExtraBold');
+@include font-face(
+  'Montserrat-ExtraBoldItalic',
+  '/static/Montserrat-ExtraBoldItalic'
+);
+@include font-face('Montserrat-ExtraLight', '/static/Montserrat-ExtraLight');
+@include font-face(
+  'Montserrat-ExtraLightItalic',
+  '/static/Montserrat-ExtraLightItalic'
+);
+@include font-face('Montserrat-Italic', '/static/Montserrat-Italic');
+@include font-face('Montserrat-Light', '/static/Montserrat-Light');
+@include font-face('Montserrat-LightItalic', '/static/Montserrat-LightItalic');
+@include font-face('Montserrat-Medium', '/static/Montserrat-Medium');
+@include font-face(
+  'Montserrat-MediumItalic',
+  '/static/Montserrat-MediumItalic'
+);
+@include font-face('Montserrat-Regular', '/static/Montserrat-Regular');
+@include font-face('Montserrat-SemiBold', '/static/Montserrat-SemiBold');
+@include font-face(
+  'Montserrat-SemiBoldItalic',
+  '/static/Montserrat-SemiBoldItalic'
+);
+@include font-face('Montserrat-Thin', '/static/Montserrat-Thin');
+@include font-face('Montserrat-ThinItalic', '/static/Montserrat-ThinItalic');
+
+$fontBlack: 'Montserrat-Black';
+$fontBlackItalic: 'Montserrat-BlackItalic';
+$fontBold: 'Montserrat-Bold';
+$fontBoldItalic: 'Montserrat-BoldItalic';
+$fontExtraBold: 'Montserrat-ExtraBold';
+$fontExtraBoldItalic: 'Montserrat-ExtraBoldItalic';
+$fontExtraLight: 'Montserrat-ExtraLight';
+$fontExtraLightItalic: 'Montserrat-ExtraLightItalic';
+$fontItalic: 'Montserrat-Italic';
+$fontLight: 'Montserrat-Light';
+$fontLightItalic: 'Montserrat-LightItalic';
+$fontMedium: 'Montserrat-Medium';
+$fontMediumItalic: 'Montserrat-MediumItalic';
+$fontRegular: 'Montserrat-Regular';
+$fontSemiBold: 'Montserrat-SemiBold';
+$fontSemiBoldItalic: 'Montserrat-SemiBoldItalic';
+$fontThin: 'Montserrat-Thin';
+$fontThinItalic: 'Montserrat-ThinItalic';
