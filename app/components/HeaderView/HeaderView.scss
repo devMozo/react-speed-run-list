@@ -1,0 +1,39 @@
+@import '../../fonts/index.scss';
+
+.HeaderView {
+  width: 700px;
+  box-shadow: 0px 0px 40px 0px rgb(219, 157, 224);
+  margin: 0 auto;
+
+  font-family: $fontMedium;
+
+  .HeaderView__logo,
+  .HeaderView__description {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 20px;
+  }
+
+  .HeaderView__description {
+    width: 400px;
+  }
+
+  .HeaderView__link {
+    width: 100%;
+    background-color: #333;
+    text-align: center;
+    transition: 0.3s;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    a {
+      width: 100%;
+      line-height: 50px;
+      display: inline-block;
+      color: white;
+      text-decoration: none;
+    }
+  }
+}

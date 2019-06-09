@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-
+import Link from 'next/link';
 import './SpeedRunRow.scss';
 
 const SpeedRunRow = ({ style, data }) => (
@@ -15,9 +15,11 @@ const SpeedRunRow = ({ style, data }) => (
         {data.released}
       </h4>
     </section>
-    <button className="SpeedRunRow__link" type="button">
-      Go!
-    </button>
+    <Link href={`/View/${data.id}`} prefetch>
+      <button className="SpeedRunRow__link" type="button">
+        Go!
+      </button>
+    </Link>
   </li>
 );
 

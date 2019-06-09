@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { URL_GET_SPEED_RUN_LIST, URL_GET_PLAYERS } from './urls';
+import { URL_GET_SPEED_RUN_LIST, URL_GET_GAME, URL_GET_USER } from './urls';
 
 function getSpeedRunList() {
   return axios
@@ -9,10 +9,16 @@ function getSpeedRunList() {
     .catch(err => err);
 }
 
-const getPlayers = idSpeedRun => axios
-    .get(URL_GET_PLAYERS(idSpeedRun))
+const getGame = idGame => axios
+    .get(URL_GET_GAME(idGame))
     .then(response => response.data)
     .then(data => data.data)
     .catch(err => err);
 
-export { getSpeedRunList, getPlayers };
+const getPlayer = idPlayer => axios
+    .get(URL_GET_USER(idPlayer))
+    .then(response => response.data)
+    .then(data => data.data)
+    .catch(err => err);
+
+export { getSpeedRunList, getGame, getPlayer };
