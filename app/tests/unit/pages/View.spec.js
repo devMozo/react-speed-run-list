@@ -1,4 +1,4 @@
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import View from '../../../../pages/View';
 
 describe('<View />', () => {
@@ -26,10 +26,19 @@ describe('<View />', () => {
         weblink: 'mockedlink.com',
       },
     },
+    err: false,
   });
 
   it('should render', () => {
-    const wrapper = shallow(<View {...MOCKED_PROPS()} />);
+    const wrapper = mount(<View {...MOCKED_PROPS()} />);
     expect(wrapper.exists()).toBeTruthy();
+    expect(wrapper.exists('.HeaderView')).toBeTruthy();
+    expect(wrapper.exists('.ButtonHandleError')).toBeFalsy();
+  });
+
+  it('should render a handler error button if there was an error', () => {
+    const wrapper = mount(<View {...MOCKED_PROPS()} err={{ err: true }} />);
+    expect(wrapper.exists('.HeaderView')).toBeFalsy();
+    expect(wrapper.exists('.ButtonHandleError')).toBeTruthy();
   });
 });

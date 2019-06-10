@@ -1,14 +1,15 @@
-describe('Test Happy Path', () => {
-  it('See the list and a single element', () => {
+describe.only('Test Whole Paths', () => {
+  beforeEach(() => {
     cy.fixture('speedRunList.json').as('SRlist');
-
     cy.server();
     cy.route({
       method: 'GET',
       url: 'https://www.speedrun.com/api/v1/games?embed=categories',
       response: '@SRlist',
     }).as('games');
+  });
 
+  it('Happy Path', () => {
     cy.visit('/');
 
     cy.wait('@games');
