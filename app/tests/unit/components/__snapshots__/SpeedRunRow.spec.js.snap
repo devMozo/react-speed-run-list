@@ -30,6 +30,7 @@ exports[`<SpeedRunRow /> should render correctly 1`] = `
     prefetch={true}
   >
     <button
+      className="SpeedRunRow__button"
       type="button"
     >
       Go!

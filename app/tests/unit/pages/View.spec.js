@@ -18,11 +18,13 @@ describe('<View />', () => {
         international: 'Mocked User International Name',
       },
     },
-    run: {
-      times: {
-        realtime: '1H20M30S',
+    firstPlace: {
+      run: {
+        times: {
+          realtime: '1H20M30S',
+        },
+        weblink: 'mockedlink.com',
       },
-      weblink: 'mockedlink.com',
     },
   });
 

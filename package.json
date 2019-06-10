@@ -6,7 +6,11 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js"
+    "start": "NODE_ENV=production node server.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:updateSnapshot": "jest --updateSnapshot",
+    "test:cypress": "cypress open"
   },
   "jest": {
     "snapshotSerializers": [
@@ -15,9 +19,17 @@
     "setupFiles": [
       "./app/tests/config/setupTests.js"
     ],
+    "moduleDirectories": [
+      "node_modules",
+      "./"
+    ],
     "moduleNameMapper": {
       "^.+\\.(css|less|scss)$": "babel-jest"
-    }
+    },
+    "testPathIgnorePatterns": [
+      "<rootDir>/cypress/",
+      "<rootDir>/node_modules/"
+    ]
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",

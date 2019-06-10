@@ -18,7 +18,7 @@ describe('Test Happy Path', () => {
     cy.get('.SpeedRunRow')
       .first()
       .within(() => {
-        cy.get('button').click();
+        cy.get('.SpeedRunRow__button').click();
       });
 
     cy.location('pathname').should('eq', '/View/k6qqkx6g');

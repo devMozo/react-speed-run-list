@@ -21,7 +21,9 @@ const SpeedRunRow = ({
       </h4>
     </section>
     <Link className="SpeedRunRow__link" href={`${ViewURL}/${id}`} prefetch>
-      <button type="button">Go!</button>
+      <button className="SpeedRunRow__button" type="button">
+        Go!
+      </button>
     </Link>
   </li>
 );

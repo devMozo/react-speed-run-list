@@ -21,3 +21,43 @@ You must develop a web app that shows the world records speedruns. Your task is 
 - Do not focus your efforts in the UI or UX. The important part is the readability of the code, as well as the architecture and maintainability.
 - Use all the libraries you want.
 - We will value very positively end-to-end testing with Selenium, Cypress or similar.
+
+# Start in development-mode the app
+
+```
+npm run dev
+```
+
+And then go to http://localhost:3000/
+
+# Start the app
+
+```
+npm start
+```
+
+# Compile the app
+
+```
+npm run build
+```
+
+# Test the app
+
+```
+npm run test
+```
+
+# Run Cypress
+
+First start the server using
+
+```
+npm run dev
+```
+
+And then..
+
+```
+npm run test:cypress
+```
