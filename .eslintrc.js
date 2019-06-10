@@ -2,8 +2,11 @@ module.exports = {
   extends: ['airbnb'],
   env: {
     browser: true,
-    jest: true
+    jest: true,
+
+    'cypress/globals': true,
   },
+  plugins: ['cypress'],
   parser: 'babel-eslint',
   rules: {
     indent: 0,

@@ -15,7 +15,10 @@ app
       app.render(req, res, actualPage);
     });
 
-    server.get('*', (req, res) => handle(req, res));
+    server.get('*', (req, res) => {
+      const actualPage = '/Home';
+      app.render(req, res, actualPage);
+    });
 
     server.listen(3000, (err) => {
       if (err) throw err;
