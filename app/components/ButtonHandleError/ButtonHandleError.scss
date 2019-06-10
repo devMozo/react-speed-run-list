@@ -1,0 +1,22 @@
+@import '../../fonts/index.scss';
+
+.ButtonHandleError {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+
+  button {
+    padding: 10px 20px;
+    margin: 0 auto;
+    background-color: #222;
+    border: 0;
+    color: #eee;
+    font-family: $fontMedium;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}

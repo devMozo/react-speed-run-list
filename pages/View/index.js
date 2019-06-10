@@ -2,10 +2,18 @@ import React from 'react';
 import { getGame, getPlayer } from 'app/api/SpeedRunAPI/';
 import PropTypes from 'prop-types';
 import axios from 'axios';
-import HeaderView from '../../app/components/HeaderView/HeaderView';
+import HeaderView from 'app/components/HeaderView/HeaderView';
+import ButtonHandleError from 'app/components/ButtonHandleError/ButtonHandleError';
+import Router from 'next/router';
 
-function View({ firstPlace, game, user }) {
+function View({
+ firstPlace, game, user, err,
+}) {
   const { run } = firstPlace;
+
+  if (err) {
+    return <ButtonHandleError onClick={() => Router.push(Router.asPath)} />;
+  }
 
   return (
     <HeaderView
@@ -22,6 +30,7 @@ View.propTypes = {
   firstPlace: PropTypes.object,
   game: PropTypes.object,
   user: PropTypes.object,
+  err: PropTypes.object,
 };
 
 View.getInitialProps = async ({ req }) => {
@@ -39,7 +48,8 @@ View.getInitialProps = async ({ req }) => {
     .then(data => getPlayer(data.firstPlace.run.players[0].id).then(user => ({
         ...data,
         user,
-      })));
+      })))
+    .catch(() => ({ err: true }));
 
   return props;
 };

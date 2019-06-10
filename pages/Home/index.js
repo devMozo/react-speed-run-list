@@ -8,6 +8,7 @@ import SpeedRunRow from 'app/components/SpeedRunRow/SpeedRunRow';
 import { getSpeedRunList } from 'app/api/SpeedRunAPI';
 import { HOME_LIST_SIZE_DESKTOP, COMMON_ITEM_SIZE } from 'app/constants/config';
 import './Home.scss';
+import ButtonHandleError from 'app/components/ButtonHandleError/ButtonHandleError';
 
 const Home = () => {
   const [{ data, loading, error }, setAxio] = useRequestAPI();
@@ -26,19 +27,20 @@ const Home = () => {
       )}
     </ResizerList>,
   );
+  const getList = () => setAxio(getSpeedRunList);
 
   React.useEffect(() => {
     setLoading(loading);
 
     if (!data && !error) {
-      setAxio(getSpeedRunList);
+      getList();
     }
   }, [data, loading]);
 
   return (
     <main className="Home">
       <Title title="SpeedRun List" />
-      {Component}
+      {error ? <ButtonHandleError onClick={getList} /> : Component}
     </main>
   );
 };
