@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HeaderView /> should render correctly 1`] = `
+<section
+  className="HeaderView"
+>
+  <picture
+    className="HeaderView__logo"
+  >
+    <img
+      alt="Mocked Game's Name"
+      src="mocked.png"
+    />
+  </picture>
+  <div
+    className="HeaderView__description"
+  >
+    <h2>
+      Mocked Game's Name
+    </h2>
+    <p>
+      1° Place: Mocked Player's Name
+    </p>
+    <p>
+      Time: 12345678
+    </p>
+  </div>
+  <div
+    className="HeaderView__link"
+  >
+    <a
+      href="mocked.com"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Go Video
+    </a>
+  </div>
+</section>
+`;

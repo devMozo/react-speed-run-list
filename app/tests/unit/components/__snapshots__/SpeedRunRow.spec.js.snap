@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SpeedRunRow /> should render correctly 1`] = `
+<li
+  className="SpeedRunRow"
+>
+  <picture
+    className="SpeedRunRow__logo"
+  >
+    <img
+      alt="Mocked International Name"
+      src="mocked-uri"
+    />
+  </picture>
+  <section
+    className="SpeedRunRow__description"
+  >
+    <h2>
+      Mocked International Name
+    </h2>
+    <h4>
+      Released:
+        
+      Mocked Released
+    </h4>
+  </section>
+  <Link
+    className="SpeedRunRow__link"
+    href="/View/123"
+    prefetch={true}
+  >
+    <button
+      type="button"
+    >
+      Go!
+    </button>
+  </Link>
+</li>
+`;

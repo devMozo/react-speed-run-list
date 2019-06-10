@@ -1,24 +1,27 @@
 import PropTypes from 'prop-types';
 import Link from 'next/link';
+import ViewURL from 'app/constants/urls';
 import './SpeedRunRow.scss';
 
-const SpeedRunRow = ({ style, data }) => (
+const SpeedRunRow = ({
+ style, data: {
+ assets, names, released, id,
+},
+}) => (
   <li className="SpeedRunRow" style={style}>
     <picture className="SpeedRunRow__logo">
-      <img src={data.assets['cover-medium'].uri} alt={data.names.international} />
+      <img src={assets['cover-medium'].uri} alt={names.international} />
     </picture>
     <section className="SpeedRunRow__description">
-      <h2>{data.names.international}</h2>
+      <h2>{names.international}</h2>
       <h4>
         Released:
         {'  '}
-        {data.released}
+        {released}
       </h4>
     </section>
-    <Link href={`/View/${data.id}`} prefetch>
-      <button className="SpeedRunRow__link" type="button">
-        Go!
-      </button>
+    <Link className="SpeedRunRow__link" href={`${ViewURL}/${id}`} prefetch>
+      <button type="button">Go!</button>
     </Link>
   </li>
 );
